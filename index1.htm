@@ -4,8 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bordear imagen</title>
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <img src="assets/imgs/ee2f44a3878be2426aa28abf18e581d6.jpg" alt="imagen" />
+    <h1>Reforma protestante</h1>
+    <div>
+      <img
+        id="img"
+        src="assets/imgs/ee2f44a3878be2426aa28abf18e581d6.jpg"
+        alt="imagen"
+      />
+      <button
+        onclick="
+        imagen = document.querySelector('#img');
+        imagen.style.borderSolid = '5px width'
+      "
+      >
+        bordear
+      </button>
+    </div>
   </body>
 </html>
