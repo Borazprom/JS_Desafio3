@@ -11,53 +11,56 @@
     <div id="inputs">
       <select id="select-1">
         <option value=""></option>
-        <option value="">1</option>
-        <option value="">2</option>
-        <option value="">3</option>
-        <option value="">4</option>
-        <option value="">5</option>
-        <option value="">6</option>
-        <option value="">7</option>
-        <option value="">8</option>
-        <option value="">9</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
       </select>
       <select id="select-2">
         <option value=""></option>
-        <option value="">1</option>
-        <option value="">2</option>
-        <option value="">3</option>
-        <option value="">4</option>
-        <option value="">5</option>
-        <option value="">6</option>
-        <option value="">7</option>
-        <option value="">8</option>
-        <option value="">9</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
       </select>
       <select id="select-3">
         <option value=""></option>
-        <option value="">1</option>
-        <option value="">2</option>
-        <option value="">3</option>
-        <option value="">4</option>
-        <option value="">5</option>
-        <option value="">6</option>
-        <option value="">7</option>
-        <option value="">8</option>
-        <option value="">9</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
       </select>
     </div>
 
     <div id="getInto">
       <button
         onclick="
-        num1 = document.querySelector('#select-1').value
-        num2 = document.querySelector('#select-2').value
-        num3 = document.querySelector('#select-3').value
-        pass = 'num1' + 'num2' + 'num3'
-        if (pass === '911'){
+        pass1 = document.querySelector('#select-1').value
+        num1 = pass1.value
+        pass2 = document.querySelector('#select-2').value
+        num2 = pass2.value
+        pass3 = document.querySelector('#select-3').value
+        num3 = pass2.value
+        pass = num1 + num2 + num3
+        if (pass == 911){
             message = document.querySelector('message')
             message.innerHTML ='Password 1 correcto'
-        }else if (pass === '714'){
+        }else if (pass == 714){
             message.innerHTML ='Password 1 correcto'
         }else{
             message.innerHTML ='Password incorrecto'
@@ -68,5 +71,7 @@
       </button>
       <p id="message"></p>
     </div>
+
+    <p id="nextPage"><a href="index2.html">Volver a la pagina anterior</a></p>
   </body>
 </html>

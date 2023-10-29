@@ -9,19 +9,22 @@
   <body>
     <h1>Reforma protestante</h1>
     <div>
-      <img
+      <img onclick="
+        imagen =document.getElementById('img')
+        if (!imagen.style.border){
+            imagen.style.border= '8px solid red'
+        }else{
+            imagen.style.border=''
+        }
+        
+        "
         id="img"
         src="assets/imgs/ee2f44a3878be2426aa28abf18e581d6.jpg"
         alt="imagen"
       />
-      <button
-        onclick="
-        imagen = document.querySelector('#img');
-        imagen.style.borderSolid = '5px width'
-      "
-      >
-        bordear
       </button>
     </div>
+
+    <p id="nextPage"><a href="index2.html">Pasar a la siguente pagina</a></p>
   </body>
 </html>

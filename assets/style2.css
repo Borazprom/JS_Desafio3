@@ -6,7 +6,7 @@ body {
     margin: 64px;
 }
 #title h1 {
-    font-size: 64px; 
+    font-size: 56px; 
 }
 #title p {
     font-size: 24px; 
@@ -47,7 +47,8 @@ input {
 }
 #message{
     text-align: center;
-    margin: 24px;
+    margin: 16px;
+    font-size: 24px;
 }
 button {
     width: 100px;
@@ -61,4 +62,27 @@ button:hover {
     background-color: rgb(142, 126, 97);
     border: solid 12px rgb(239, 209, 36);
 
+}
+#pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#lastPage {
+    text-align: left;
+    margin-left: 50px;
+}
+#lastPage a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+#nextPage {
+    text-align: right;
+    margin-right: 50px;
+}
+#nextPage a {
+    text-decoration: none;
+    color: white;
+font-size: 24px;
 }
